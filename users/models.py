@@ -10,7 +10,6 @@ class User(AbstractUser):
     username = models.CharField(max_length=100, unique=True)
     fb_token = models.CharField(max_length=300)
     fb_name = models.CharField(max_length=150, blank=True, null=True)
-    password = models.CharField(max_length=10)
     email = models.EmailField(blank=True, null=True)
     EMAIL_FIELD = 'email'
     USERNAME_FIELD = 'username'
