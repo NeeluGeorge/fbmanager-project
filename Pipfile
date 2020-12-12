@@ -10,6 +10,8 @@ django = "*"
 django-rest-framework = "*"
 djangorestframework-simplejwt = "*"
 django-cors-headers = "*"
+gunicorn = "*"
+whitenoise = "*"
 
 [requires]
 python_version = "3.7"
