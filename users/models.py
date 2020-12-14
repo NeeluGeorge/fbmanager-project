@@ -19,11 +19,3 @@ class User(AbstractUser):
     class Meta:
         verbose_name = 'Facebook User'
         verbose_name_plural = 'Facebook Users'
-
-    # def __str__(self):
-    #     return f'{self.fb_id}'
-
-    # def save(self, *args, **kwargs):
-    #     user = super().save(*args, **kwargs)
-    #     user.set_password('Pwd@12345')
-    #     return user

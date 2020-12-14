@@ -39,5 +39,4 @@ class UserTokenViewSet(viewsets.ModelViewSet):
                                        fb_token=data['fb_token'],
                                        password='Pwd@12345')
         token = AccessToken.for_user(user)
-        print(type(token), token)
         return Response({'token': str(token)})
